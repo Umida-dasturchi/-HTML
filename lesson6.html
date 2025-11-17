@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок 6ой</title>
+</head>
+<body>
+    <figure>
+        <img src="images/photo_2025-11-15_11-30-56.jpg" alt="Горы на рассвете" width="500">
+        <figcaption>Рассвет в горах. Фото: Н.Гусев</figcaption>
+    </figure>
+
+    <picture>
+        <source srcset="img/photo_2025-11-15_11-31-25.jpg" media="(min-width: 800px)">
+        <source srcset="img/photo_2025-11-15_11-31-36.jpg" media="(max-width: 799px)">
+        <img src="img/photo_2025-11-15_11-31-41.jpg" alt="Горы на рассвете">
+    </picture>
+
+    <img src="./photo_2025-11-11_12-52-13.jpg" srcset="photo_2025-11-11_12-52-13@1x.jpg 1x, photo_2025-11-11_12-52-13@2px.jpg 2x" alt="two cooks spoil the borsh">
+
+    <map name="worldmap">
+        <area shape="rect" coords="34,44,270,350" href="europe.html" alt="Европа">
+        <area shape="circle" coords="477,300,75" href="asia.html" alt="Азия">
+        <area shape="poly" coords="130,140,180,200,130,250" href="africa.html" alt="Африка">
+    </map>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок 7ой</title>
+</head>
+
+<body>
+    <form action="/send" method="get">
+        <label for="name">Имя:
+            <input type="text" name="username" id="name" placeholder="Введите имя" required>
+        </label><br><br>
+        <label for="word">Пароль:
+            <input type="password" name="pass" id="word">
+        </label><br><br>
+        <label for="email">Email:
+            <input type="email" name="email" id="email"><br><br>
+        </label>
+
+        <label for="age">Возраст:
+            <input type="number" name="age" id="age" min="1" max="99">
+        </label><br><br>
+
+        <label for="date">Дата рождения:
+            <input type="date" name="birth" id="date">
+        </label><br><br>
+
+        <label for="colour">Цвет:
+            <input type="color" name="favcolour" id="colour">
+        </label><br><br>
+
+        <label for="agree">
+            <input type="checkbox" name="agree" id="agree" checked>Согласен с условиями
+        </label><br><br>
+
+        <label for="male">
+            <input type="radio" name="gender" id="male" value="male">Мужской</label><br><br>
+        <label for="female">
+            <input type="radio" name="gender" id="female" value="female">Женский
+        </label><br><br>
+        <input type="file" name="avatar" id=""><br><br>
+        <label for="message">Сообщение:</label><br>
+        <textarea name="message" id="message" rows="4" cols="40" placeholder="Введите текст"></textarea><br><br>
+
+        <label for="country">Страна:</label>
+        <select name="country" id="country">
+            <option value="ru">Россия</option>
+            <option value="us">США</option>
+            <option value="de">Германия</option>
+        </select><br><br>
+
+        <button type="submit">
+            Отправить
+        </button>
+        <button type="reset">Очистить</button>
+        <button type="button" onclick="alert('Привет')">Просто кнопка</button>
+    </form>
+
+    <fieldset>
+        <legend>Legend</legend>
+    </fieldset>
+</body>
+
+</html>
