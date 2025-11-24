@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Урок 14</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <label for="name">Имя:</label>
+        <input type="text" name="username" id="name" placeholder="Введите имя" required><br><br>
+        <label for="">Email:
+            <input type="email" name="email" id="" required></label><br><br>
+        <label for="">Пароль:
+            <input type="password" name="pass" id="">
+        </label><br><br>
+        <label for="">Дата рождения:
+            <input type="date" name="birth" id="">
+        </label><br><br>
+        <label for="">Цвет:
+            <input type="color" name="favcolour" id="">
+        </label><br><br>
+        <label for="">Файл:
+            <input type="file" name="upload" id="">
+        </label><br><br>
+        <label for="">Возраст:
+            <input type="number" name="age" id="" min="1" max="100">
+        </label><br><br>
+        <label for="">Оцените сайт:
+            <input type="range" name="rating" id="" min="0" max="10">
+        </label><br><br>
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+    </form><br><br><br>
+
+    <form action="">
+        <label for="">Комментарий:</label><br>
+        <textarea name="comment" id="" rows="4" cols="30" placeholder="Ваше мнение..."></textarea><br><br>
+        <label for="city">Город:
+            <select name="city" id="city">
+                <option value="">Москва</option>
+                <option value="">Казань</option>
+                <option value="">Сочи</option>
+            </select><br><br>
+
+            <fieldset>
+                <legend>Предпочтения</legend>
+                <label for="">
+                    <input type="checkbox" name="subscribe" id="" checked>
+                    Подписаться на новости
+                </label><br><br>
+                <label for="">
+                    <input type="radio" name="theme" id="" value="light" checked>Светлая
+                </label>
+                <label for="">
+                    <input type="radio" name="theme" id="" value="dark">Тёмная
+                </label>
+            </fieldset><br><br>
+
+            <button type="submit">Отправить</button>
+            <button type="reset">Очистить</button>
+            <button disabled="disabled">Disabled</button>
+        </label>
+    </form>
+</body>
+</html>
